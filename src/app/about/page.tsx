@@ -1,6 +1,8 @@
 export default function about(){
     return (
-        <>About Page Hii about</>
+        <div>
+            <div>Bashar</div>
+        </div>
         
     );
 }
