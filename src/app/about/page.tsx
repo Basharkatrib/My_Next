@@ -1,7 +1,7 @@
 export default function about(){
     return (
         <div>
-            <div>Bashar</div>
+            <div>Bashar main</div>
         </div>
         
     );
