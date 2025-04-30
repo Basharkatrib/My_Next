@@ -1,5 +1,6 @@
 export default function about(){
     return (
-        <>About Page</>
+        <>About Page Hii</>
+        
     );
 }
