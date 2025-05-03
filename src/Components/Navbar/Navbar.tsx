@@ -40,17 +40,17 @@ function Navbar() {
     }, [open])
 
     return (
-        <div className="w-full fixed py-4 px-2 md:px-20 flex items-end justify-between z-50">
+        <div className="w-full fixed py-4 px-2 md:px-20 flex items-end justify-between z-100 bg-white">
             <img src='images/logo.svg' />
-            <ul className=" gap-4 hidden md:flex">
+            <ul className=" gap-4 hidden xl:flex">
                 {
                     Data.map((item) => (
                         <li key={item.id}>{item.title}</li>
                     )
                     )}
             </ul>
-            <div className="bg-[#EA6D27] p-2 rounded-tl-2xl rounded-br-2xl font-bold text-white hidden md:block">Book a table</div>
-            <div className="flex flex-col gap-2 items-end md:hidden w-[30px] cursor-pointer" onClick={() => setOpen(!open)}>
+            <div className="bg-[#EA6D27] p-2 rounded-tl-2xl rounded-br-2xl font-bold text-white hidden xl:block">Book a table</div>
+            <div className="flex flex-col gap-2 items-end xl:hidden w-[30px] cursor-pointer" onClick={() => setOpen(!open)}>
                 <div className="w-full h-0.5 bg-[#EA6D27]"></div>
                 <div className={`${open ? 'w-1/2' : 'w-full'} transition-all duration-500 h-0.5 bg-[#EA6D27]`}></div>
                 <div className="w-full h-0.5 bg-[#EA6D27]"></div>
