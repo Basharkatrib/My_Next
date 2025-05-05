@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="w-full py-4 px-2 md:px-20 flex flex-col ">
+        <div className="w-full py-4 px-2 md:px-20 flex flex-col bg-white">
             <div className="flex flex-col gap-6 md:gap-0 md:flex-row md:justify-between border-b-1 border-b-gray-600 py-6">
             <div className="flex flex-col gap-3 basis-[45%]">
                 <img className="w-[150px]"  src='images/logo.svg' />

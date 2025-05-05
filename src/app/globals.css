@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper-wrapper{
+  display: flex !important;
+  align-items: end !important;
+  height: 70% !important;
+   
+}
+
+
+.swiper-pagination-bullet-active{
+  background-color: #EA6D27 !important;
+}
