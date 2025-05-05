@@ -1,6 +1,7 @@
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
+import { Element } from 'react-scroll';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,47 +11,50 @@ import 'swiper/css/autoplay';
 
 import Customer from './Customer';
 
+  
+
 
 export default function Customers() {
 
     const data = [
         {
             id: 1,
-            desc: "Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper",
-            name: "Ama Ampomah",
-            job: "CEO & Founder Inc",
-            rate: 4,
-            img: "images/customer.png"
+            desc: "The food was absolutely delicious, and the service was excellent. I loved the atmosphere in the restaurant, and the staff were very friendly. I will definitely return!",
+            name: "Ali Ahmed",
+            job: "Software Engineer",
+            rate: 5,
+            img: "images/customer1.avif"
         },
         {
             id: 2,
-            desc: "Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper",
-            name: "Ama Ampomah",
-            job: "CEO & Founder Inc",
-            rate: 2,
+            desc: "The food was good, but the wait time was a bit long. I liked the dishes, but the service speed could be improved.",
+            name: "Fatima Youssef",
+            job: "Graphic Designer",
+            rate: 3,
             img: "images/customer.png"
         },
         {
             id: 3,
-            desc: "Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper",
-            name: "Ama Ampomah",
-            job: "CEO & Founder Inc",
+            desc: "Best dining experience I've ever had! The food was delicious, the service was outstanding, and the ambiance was great. I highly recommend this restaurant.",
+            name: "Youssef Mohammed",
+            job: "Marketing Specialist",
             rate: 5,
-            img: "images/customer.png"
+            img: "images/customer3.avif"
         },
         {
             id: 4,
-            desc: "Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Proin iaculis platea ipsum sagittis ac eu aliquam quis. Ornare tincidunt tempus semper",
-            name: "Ama Ampomah",
-            job: "CEO & Founder Inc",
+            desc: "The food was good, but there was some noise from nearby tables. I think the comfort of the space could be improved.",
+            name: "Mona Salem",
+            job: "Teacher",
             rate: 4,
-            img: "images/customer.png"
-        },
-    ]
+            img: "images/customer4.jpeg"
+        }
+    ];
+    
     return (
-        <div className=" bg-gray-100 w-full flex flex-col items-center px-4 md:px-20  p-12  relative mb-44 pb-50">
-            <div className="text-3xl font-bold">Our Special Dishes</div>
-            <div className="text-center">Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt </div>
+        <Element className=" bg-gray-100 w-full flex flex-col items-center px-4 md:px-20  p-12  relative mb-44 pb-50" name="Customers">
+            <div className="text-3xl font-bold">Our Special Customers</div>
+            <div className="text-center">Our customers love us! Here's what they have to say about their dining experiences.<br /> From delicious food to exceptional service, we strive to make every visit memorable.</div>
             <div className='w-full h-auto mt-5 hidden lg:block'>
                 <Swiper
                     className='w-full !flex !justify-center !items-center h-[550px] md:h-[500] xl:h-[450px]'
@@ -101,6 +105,6 @@ export default function Customers() {
 
             </div>
 
-        </div>
+        </Element>
     );
 }

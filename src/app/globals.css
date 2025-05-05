@@ -36,3 +36,13 @@ body {
 .swiper-pagination-bullet-active{
   background-color: #EA6D27 !important;
 }
+
+.active-link-desk{
+  border-bottom-width: 2px;
+  border-bottom-color: #EA6D27;
+}
+
+.active-link-mob{
+  border-bottom-width: 2px;
+  border-bottom-color: white;
+}
