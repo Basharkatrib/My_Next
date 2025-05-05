@@ -45,7 +45,7 @@ export default function Special() {
         },
     ];
     return (
-        <div className={`w-full flex flex-col  justify-between px-2 md:px-20 bg-gray-100 pt-12 mt-7`}>
+        <div className={`w-full flex flex-col  justify-between px-4 md:px-20 bg-gray-100 pt-12 mt-7`}>
             <div className="w-full flex flex-col items-center">
                 <div className="text-3xl font-bold">Our Special Dishes</div>
                 <div className="text-center">Lorem ipsum dolor sit amet, consectetur <br />adipiscing elit, sed do eiusmod tempor incididunt </div>

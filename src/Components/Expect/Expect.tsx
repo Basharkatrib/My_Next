@@ -18,13 +18,13 @@ export default function () {
         },
     ]
     return (
-        <div className="md:min-h-screen bg-white w-full flex flex-col-reverse lg:flex-row gap-9 lg:justify-between px-2 md:px-20 p-12 items-center">
+        <div className="md:min-h-screen bg-white w-full flex flex-col-reverse lg:flex-row gap-9 lg:justify-between px-4 md:px-20 p-12 items-center">
             <div className="flex flex-col gap-5">
                 <div className="text-5xl font-bold">Our Expects Chef</div>
                 <div className="text-xl opacity-60">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do eiusmod tempor incididunt <br /> ut labore et dolore magna aliqua.</div>
                 {
                     data.map((item) => (
-                        <div key={item.id} className="w-full flex justify-between mb-5">
+                        <div key={item.id} className="w-full flex flex-col md:flex-row gap-3 md:justify-between mb-5">
                             <div className="flex basis-[40%] gap-2">
                                 <img src='images/check.svg' />
                                 <div className="opacity-60">{item.title_left}</div>

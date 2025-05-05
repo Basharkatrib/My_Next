@@ -40,7 +40,7 @@ function Navbar() {
     }, [open])
 
     return (
-        <div className="w-full fixed py-4 px-2 md:px-20 flex items-end justify-between z-100 bg-white">
+        <div className="w-full fixed py-4 px-4 md:px-20 flex items-end justify-between z-100 bg-white">
             <img src='images/logo.svg' />
             <ul className=" gap-4 hidden xl:flex">
                 {

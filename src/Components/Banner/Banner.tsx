@@ -1,6 +1,6 @@
 function Banner() {
     return (
-        <div className="w-full flex flex-col lg:flex-row justify-between px-2 md:px-20 bg-white   h-auto relative">
+        <div className="w-full flex flex-col lg:flex-row justify-between px-4 md:px-20 bg-white   h-auto relative">
             <img className="absolute w-[150px] left-[57%] top-[17%] opacity-25" src='images/left.svg' />
             <img className="absolute w-[150px] right-0 top-[10%] opacity-25" src='images/right.svg' />
             <img className="absolute w-[150px] right-0 top-[55%] opacity-25" src='images/bottom.svg' />
