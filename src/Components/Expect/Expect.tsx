@@ -27,7 +27,7 @@ export default function ChefSection() {
             className="md:min-h-screen bg-white w-full flex flex-col-reverse lg:flex-row gap-9 lg:justify-between px-4 md:px-20 p-12 items-center"
             name="Chef"
         >
-            <div className="flex flex-col gap-5">
+            <div data-aos="fade-right" data-aos-duration="3000" className="flex flex-col gap-5">
                 <div className="text-5xl font-bold">Our Expert Chef</div>
                 <div className="text-xl opacity-60">
                     Discover the passion and expertise behind every dish. <br />
@@ -57,7 +57,7 @@ export default function ChefSection() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div data-aos="fade-left" data-aos-duration="3000">
                 <img className="h-128" src="images/chef.png" alt="Chef" />
             </div>
         </Element>

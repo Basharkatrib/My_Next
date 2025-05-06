@@ -16,7 +16,7 @@ export default function Home() {
   
 
   return (
-    <div className={`flex flex-col bg-white ${getfont.className}`}>
+    <div className={`flex flex-col bg-white overflow-hidden ${getfont.className}`}>
       <Navbar />
       <Banner />
       <Special />

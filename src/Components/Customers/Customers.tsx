@@ -95,7 +95,7 @@ export default function Customers() {
 
                 </Swiper>
             </div>
-            <div className='bg-[url(/images/back.png)] h-64 absolute -bottom-30 rounded-3xl w-[88%] flex flex-col items-center justify-center gap-6'>
+            <div data-aos="fade-top" data-aos-duration="3000" className='bg-[url(/images/back.png)] h-64 absolute -bottom-30 rounded-3xl w-[88%] flex flex-col items-center justify-center gap-6'>
                 <div className='text-2xl md:text-4xl text-white font-bold text-center'>Get Or Promo Code by<br />Subscribing To our  Newsletter</div>
                 <div className='px-2 md:px-4 py-2  bg-white flex flex-nowrap rounded-xl w-5/6 md:w-1/2'>
                     <input className='border-none outline-none w-full p-2 mr-2' type='text' placeholder='Enter your email'/>

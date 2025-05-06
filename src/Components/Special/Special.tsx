@@ -62,9 +62,9 @@ export default function Special() {
 
                 </div>
                 <div className="w-full flex flex-col lg:flex-row py-14 gap-15 items-center xl:h-screen">
-                    <img className=" w-full h-72 md:h-128 lg:basis-[50%] " src='images/dish-5.png' alt="dsgd" />
+                    <img data-aos="fade-right" data-aos-duration="3000" className=" w-full h-72 md:h-128 lg:basis-[50%] " src='images/dish-5.png' alt="dsgd" />
                     
-                    <div className="flex flex-col basis-[45%] gap-5">
+                    <div data-aos="fade-left" data-aos-duration="3000" className="flex flex-col basis-[45%] gap-5">
                         <div className="text-5xl font-bold">Welcome to Our <br /> Restaurant</div>
                         <div className="text-xl opacity-60">Indulge in our signature dish, expertly crafted with the finest ingredients and bursting with rich, unforgettable flavor.</div>
                         <div className="flex gap-3">

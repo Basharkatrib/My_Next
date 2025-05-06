@@ -1,3 +1,8 @@
+'use client';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 interface DishProps {
     info: {
         id: number
@@ -9,8 +14,13 @@ interface DishProps {
 }
 
 export default function Dish({ info }: DishProps) {
+
+    useEffect(()=>{
+        AOS.init();
+    },[]);
+    
     return (
-        <div className="relative basis-full sm:basis-[45%] xl:mb-0 xl:basis-[23%] border-[1px] hover:shadow-2xl  hover:bg-white   active:shadow-2xl active:bg-white transition-all duration-300  border-white rounded-tl-4xl rounded-br-4xl flex flex-col gap-4 items-center justify-end h-54 md:h-64 pb-9">
+        <div data-aos="fade-up" data-aos-duration="3000" className="relative basis-full sm:basis-[45%] xl:mb-0 xl:basis-[23%] border-[1px] hover:shadow-2xl  hover:bg-white   active:shadow-2xl active:bg-white transition-all duration-300  border-white rounded-tl-4xl rounded-br-4xl flex flex-col gap-4 items-center justify-end h-54 md:h-64 pb-9">
             <div className="font-bold">{info.title}</div>
             <div className="opacity-45 text-center">{info.desc}</div>
             <div className="absolute -top-20 w-36">
